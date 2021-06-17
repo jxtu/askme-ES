@@ -1,3 +1,9 @@
+# jxtu
+.idea
+.DS_Store
+raw_data
+note.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
