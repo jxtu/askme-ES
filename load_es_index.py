@@ -45,7 +45,7 @@ class IndexLoader:
 @click.command()
 @click.argument("data_dir", type=click.Path(exists=True))
 @click.argument("csv_path", type=click.Path(exists=True))
-@click.argument("index_name", type=click.STRING)
+@click.argument("index_name", type=click.STRING, default="cord_askme_idx")
 def main(data_dir: str, csv_path: str, index_name: str):
     idx_loader = IndexLoader.from_csv(index_name, data_dir, csv_path)
     idx_loader.load()
